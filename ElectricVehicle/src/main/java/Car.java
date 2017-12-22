@@ -1,4 +1,4 @@
-public class Car extends Dealer{
+public class Car extends Dealer {
     public String carModel;
     public int carStock;
     public int manufacturyYear;

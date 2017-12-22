@@ -1,4 +1,4 @@
-public class ElectricCar extends Car{
+public class ElectricCar extends Car {
     public int motorPower;
     public int batteryCapacity;
     public int consumption;
