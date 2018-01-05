@@ -1,14 +1,21 @@
 public class Car extends Dealer {
+
     public String carModel;
     public int carStock;
     public int manufacturyYear;
     public int price;
+    public boolean hasFastCharging;
+    public int horsePower;
+    public int autonomy;
 
-    public Car(String carModel, int carStock, int manufacturyYear, int price) {
+    public Car(String carModel, int carStock, int manufacturyYear, int price, boolean hasFastCharging, int horsePower, int autonomy) {
         this.carModel = carModel;
         this.carStock = carStock;
         this.manufacturyYear = manufacturyYear;
         this.price = price;
+        this.hasFastCharging = hasFastCharging;
+        this.horsePower = horsePower;
+        this.autonomy = autonomy;
     }
 
     public String getCarModel() {
@@ -42,4 +49,38 @@ public class Car extends Dealer {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public boolean isHasFastCharging() {
+        return hasFastCharging;
+    }
+
+    public void setHasFastCharging(boolean hasFastCharging) {
+        this.hasFastCharging = hasFastCharging;
+    }
+
+    public int getHorsePower() {
+        return horsePower;
+    }
+
+    public void setHorsePower(int horsePower) {
+        this.horsePower = horsePower;
+    }
+
+    public int getAutonomy() {
+        return autonomy;
+    }
+
+    public void setAutonomy(int autonomy) {
+        this.autonomy = autonomy;
+    }
+
+
 }
+
+    public void retieveList(cars) {
+
+        for (Car car : cars) {
+            System.out.println(car.getCarModel() + " " + car.getCarStock() + " " + car.getPrice() + "\n");
+        }
+
+    }

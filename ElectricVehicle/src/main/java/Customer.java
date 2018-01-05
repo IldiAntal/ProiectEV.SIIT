@@ -1,10 +1,10 @@
 public class Customer {
     public String name;
-    public int budget;
+    public int GreenProgram;
 
     public Customer(String name, int budget) {
         this.name = name;
-        this.budget = budget;
+        this.GreenProgram = budget;
     }
 
     public String getName() {
@@ -15,11 +15,11 @@ public class Customer {
         this.name = name;
     }
 
-    public int getBudget() {
-        return budget;
+    public int getGreenProgram() {
+        return GreenProgram;
     }
 
-    public void setBudget(int budget) {
-        this.budget = budget;
+    public void setGreenProgram(int greenProgram) {
+        this.GreenProgram = greenProgram;
     }
 }
