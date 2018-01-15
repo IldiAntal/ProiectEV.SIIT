@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Car extends Dealer {
 
     public String carModel;
@@ -75,12 +77,5 @@ public class Car extends Dealer {
     }
 
 
+
 }
-
-    public void retieveList(cars) {
-
-        for (Car car : cars) {
-            System.out.println(car.getCarModel() + " " + car.getCarStock() + " " + car.getPrice() + "\n");
-        }
-
-    }

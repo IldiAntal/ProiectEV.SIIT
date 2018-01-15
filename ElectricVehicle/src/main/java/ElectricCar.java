@@ -3,8 +3,8 @@ public class ElectricCar extends Car {
     public int batteryCapacity;
     public int consumption;
 
-    public ElectricCar(String carModel, int carStock, int manufacturyYear, int price, int motorPower, int batteryCapacity, int consumption) {
-        super(carModel, carStock, manufacturyYear, price);
+    public ElectricCar(String carModel, int carStock, int manufacturyYear, int price, boolean hasFastCharging, int horsePower, int autonomy, int motorPower, int batteryCapacity, int consumption) {
+        super(carModel, carStock, manufacturyYear, price, hasFastCharging, horsePower, autonomy);
         this.motorPower = motorPower;
         this.batteryCapacity = batteryCapacity;
         this.consumption = consumption;
